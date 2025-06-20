@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto Mono";
+}
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    font-family: "Roboto Mono";
+    align-items: center;
+    text-align: center;
+    background-color: #2A9D8F;
 }
 
+h1{
+    font-weight: bold;
+    color:#264653;
+    font-size: 50px;
+}
 
 .calculator-container{
     display: flex;
@@ -10,22 +25,24 @@ body{
     border: 1px solid black;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    padding: 5px;
+    padding: 20px 10px;
     border-radius: 10px;
-    background-color: grey;
+    background-color: #264653;
 }
 
 .display{
-    border: 1px solid black;
+    border: 1px solid #264653;
     font-size: 50px;
     margin: 10px;
     padding: 0px 20px;
-    background-color: darkolivegreen;
+    background-color: #2A9D8F;
     height: 70px;
-    width: 200px;
+    width: 220px;
     text-align: end;
     overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: #264653;
 }
 
 .buttons{
@@ -44,11 +61,21 @@ body{
 }
 
 button{
+    box-sizing: border-box;
     width: 50px;
     height: 50px;
     font-size: 40px;
-    border: 1px solid black;
+    border: none;
     border-radius: 5px;
-    background-color: darkslategray;
-    color: white;
+    background-color: #E76F51;
+    color: #264653;
+    line-height: 0px;
+}
+
+.operator{
+    background-color: #E9C46A;
+}
+
+.clear, .backspace, .equals{
+    background-color: #F4A261;
 }
